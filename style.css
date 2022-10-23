@@ -1,0 +1,16 @@
+.abc { 
+    border: 1px solid black;
+    
+    width: 1100;
+    background-color: white;
+    
+}
+body {
+    background-color: lightgrey;
+}
+#abc {
+    align-tracks: right;
+    text-align: center;
+    color: white;
+    background-color: darkblue;
+}
