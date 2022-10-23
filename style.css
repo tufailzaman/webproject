@@ -1,16 +1,30 @@
 .abc { 
     border: 1px solid black;
     
-    width: 1100;
+    width: 1200;
     background-color: white;
     
 }
 body {
     background-color: lightgrey;
 }
-#abc {
-    align-tracks: right;
+ #abc {
     text-align: center;
     color: white;
     background-color: darkblue;
+}
+
+select {
+    background-color: brown;
+    size: 40px;
+    color: white;
+    width: 70px;
+    height: 40;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+select:hover {
+             
+             background-color: blue;
 }
