@@ -29,4 +29,13 @@ select:hover {
 option {
            text-align: left;
 }
-    
+marquee {
+          height: 310;
+          marquee-style:alternate;
+        }
+ #marquee {
+           background-color: gray;
+        text-align: left;
+        font-size: 22px;
+           
+}
