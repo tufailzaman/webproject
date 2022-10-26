@@ -1,9 +1,7 @@
 .abc { 
     border: 1px solid black;
-    
-    width: 1200;
+    width: 1300;
     background-color: white;
-    
 }
 body {
     background-color: lightgrey;
@@ -18,13 +16,17 @@ select {
     background-color: brown;
     size: 40px;
     color: white;
-    width: 70px;
     height: 40;
     font-size: 16px;
     padding: 0px;
+   text-align: center;
     margin: 0px;
 }
 select:hover {
-             
              background-color: blue;
+            
 }
+option {
+           text-align: left;
+}
+    
