@@ -2,6 +2,7 @@
     border: 1px solid black;
     width: 1300;
     background-color: white;
+    margin-left: 22px;
 }
 body {
     background-color: lightgrey;
@@ -36,6 +37,6 @@ marquee {
  #marquee {
            background-color: gray;
         text-align: left;
-        font-size: 22px;
-           
+        font-size: 17px;
+        line-height: 30px;          
 }
