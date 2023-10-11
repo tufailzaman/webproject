@@ -39,16 +39,16 @@
              <table  class="abc" align="center" height="40">
             <tr id="abc">
               <th width="800" bgcolor="white"></th> 
-                 <th>Facebook</th>
-                 <th>ICP Anthem</th>
-                 <th>Staff Profile</th>
-                 <th>Downloads</th>
+                 <th ><a style="color: white;" href="https://www.facebook.com/www.icp.edu.pk">Facebook</a></th>
+                 <th ><a style="color: white;" href="https://www.facebook.com/watch/?v=1050430944967683">ICP Anthem</a></th>
+                 <th><a style="color: white;" href="https://icp.edu.pk/staff_directory/">Staff Profile</a></th>
+                 <th><a style="color: white;" href="https://icp.edu.pk/exams/download.php?abc=202305180630005">Downloads</a></th>
             </tr>
           </table>
 
           <table class="abc"  height="40" >
             <tr>
-                <th bgcolor="brown" style="color: white; width: 70;"><a href="/">Home</a></th>
+                <th bgcolor="brown" style="color: white; width: 70;"><a style="color: white;" href="/">Home</a></th>
                 
                 <th bgcolor="brown" width="70">
                   <select style="width: 70;" id="myDropdown">
@@ -70,16 +70,25 @@
 
 
                 <th bgcolor="brown" width="125px">
-                 <select style="width: 125px;">
-                  <option>Administration</option>
-                  <option>Vice Chancellor</option>
-                  <option>Vice Chancellor Message</option>
-                  <option>Chiesf Organizer Societies / KU</option>
-                  <option>Directorate of Sttudent Affairs</option>
-                  <option>Provost</option>
-                  <option>Chief Proctor Office</option>
-                  <option>ORIC</option>
+                 <select style="width: 125px;" id="Administration">
+                  <option value="Administration">Administration</option>
+                  <option value="vice">Vice Chancellor</option>
+                  <option value="viceM">Vice Chancellor Message</option>
+                  <option value="chief">Chief Organizer Societies / KU</option>
+                  <option value="directorate">Directorate of Sttudent Affairs</option>
+                  <option value="provost">Provost</option>
+                  <option value="proctor">Chief Proctor Office</option>
+                  <option value="oric">ORIC</option>
                  </select>
+
+                 <script>
+                  document.getElementById("Administration").onchange = function () {
+                    var slectedOption = this.options[this.selectedIndex];
+                    var url = slectedOption.value;
+                    window.location.href = url;
+                  };
+                </script>
+
                 </th>
                 <th bgcolor="brown" width="95">
                   <select style="width: 95;">
@@ -102,7 +111,7 @@
                 </th>
               
               
-                <th bgcolor="brown" style="color: white; width: 70;"><a href="/exam">Examination</a></th>
+                <th bgcolor="brown" style="color: white; width: 70;"><a style="color: white;" href="/exam">Examination</a></th>
               
                 <!-- <th bgcolor="brown" width="110">
                   <select style="width: 110px;">
