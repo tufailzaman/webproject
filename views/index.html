@@ -48,16 +48,26 @@
 
           <table class="abc"  height="40" >
             <tr>
-                <th bgcolor="brown" style="color: white; width: 70;">Home</th>
+                <th bgcolor="brown" style="color: white; width: 70;"><a href="/">Home</a></th>
                 
                 <th bgcolor="brown" width="70">
-                  <select style="width: 70;">
-                          <option>About</option>
-                          <option>History & Milestone</option>
-                          <option>Quaid-e-Azam Muhammad Ali</option>
-                          <option>jinnah's Will</option>
+                  <select style="width: 70;" id="myDropdown">
+                          <option value="/about" name="tufail">About</option>
+                          <option value="/history">History & Milestone</option>
+                          <option value="/quaidwill">Quaid-e-Azam Muhammad Ali <br /> jinnah's Will </option>
                   </select>
               </th>
+
+              <script>
+                document.getElementById("myDropdown").onchange = function () {
+                  var slectedOption = this.options[this.selectedIndex];
+                  var url = slectedOption.value;
+                  window.location.href = url;
+                };
+              </script>
+
+
+
 
                 <th bgcolor="brown" width="125px">
                  <select style="width: 125px;">
@@ -90,10 +100,14 @@
                     <option>Apply online for MPhil/PhD  </option>
                   </select>
                 </th>
-                <th bgcolor="brown" width="110">
+              
+              
+                <th bgcolor="brown" style="color: white; width: 70;"><a href="/exam">Examination</a></th>
+              
+                <!-- <th bgcolor="brown" width="110">
                   <select style="width: 110px;">
                   <option>Examination</option>
-                </select></th>
+                </select></th> -->
 
                 <th bgcolor="brown" width="185">
                   <select style="width: 185px;">
